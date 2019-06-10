@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<form action="" method="POST">
+    <input type="text" name="x" placeholder="Jina">
+    <input type="text" name="y" placeholder="Jina">
+    <input type="text" name="z" placeholder="Jina">
+    <input type="submit" name="w" value="Ona">
+    {% if make %}
+        <p>{{ make }}</p>
+    {% endif%}
+
+    {% if sasa %}
+        <p>{{ sasa }}</p>
+    {% endif%}
+
+    {% if wewe %}
+        <p>{{ wewe }}</p>
+    {% endif%}
+</form>
+
+<hr>
+
+{% for item in items %}
+    <h2>{{ item }}</h2>
+{% endfor %}
+
+</body>
+</html>
